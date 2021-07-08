@@ -60,8 +60,8 @@ class PetController extends Controller
 
         $pet = Pet::where('tag', $tag)->first();
         if( !$pet ){
-            dd('no encontrada');
-            return view();
+            // dd('no encontrada');
+            return redirect('pets/create');
         }
 
         return view('P.show', compact('pet'));
