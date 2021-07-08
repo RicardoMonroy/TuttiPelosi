@@ -1,0 +1,1129 @@
+// @import "~bootstrap/scss/bootstrap";
+
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	border: none;
+	outline: none;
+  box-sizing: content-box;
+}
+
+/* ---- Variables ---- */
+$color-yellowBg: #FDBE34;
+$color-greenLBg: #57C09E;
+$color-purpleBg: #875AA6;
+$color-purpleBg2: #A05FA6;
+$color-violetBg: #C44B9C;
+$color-grayBg: #B9B8BC;
+$color-grayLBg: #E4E9E6;
+$color-grayLgBg2: #DCDCDE;
+$color-grayHeaderBg: #F3F2F2;
+$color-grayDarkBg: #5C5B5D;
+$color-yellowO: rgba(246, 177, 0, .5);
+$color-grayMenu: #B9B8BC;
+
+$color-white: #FFFFFF;
+$color-yellowText: #FDBE34;
+$color-yellowText2: #F6B100;
+$color-orangeText: #F15A36;
+$color-redText: #EF4627;
+$color-grayIcon: #AEAEB1;
+$color-grayDarkText: #5F5F63;
+$color-grayDark: #231F20;
+$color-green: #AEC81B;
+
+$color-orangeBtn: #F15A36;
+$color-greenBtn: #64BC45;
+
+/* Fonts */
+@font-face {
+  font-family: Tungsten-Black;
+  src: url('../fonts/Tungsten\ Rounded\ Black.otf');
+}
+@font-face {
+  font-family: Tungsten-Bold;
+  src: url('../fonts/Tungsten\ Rounded\ Bold.otf');
+}
+@font-face {
+  font-family: Tungsten-SemiBold;
+  src: url('../fonts/Tungsten\ Rounded\ SemiBold.otf');
+}
+@font-face {
+  font-family: Tungsten-Medium;
+  src: url('../fonts/Tungsten\ Rounded\ Medium.otf');
+}
+@font-face {
+  font-family: Tungsten-Book;
+  src: url('../fonts/Tungsten\ Rounded\ Book.otf');
+}
+@font-face {
+  font-family: Tungsten-Light;
+  src: url('../fonts/Tungsten\ Rounded\ Light.otf');
+}
+/* bg-color */
+.gb-gray {
+  background-color: $color-grayLBg;
+}
+.gb-grayDark {
+  background-color: $color-grayDarkBg;
+}
+.bg-grayL {
+  background-color: $color-grayLgBg2;
+}
+
+/* --- Estilos para textos --- */
+.text-yellow {
+  color: $color-yellowText;
+}
+.text-yellow2 {
+  color: $color-yellowText2;
+}
+.font-SemiBold {
+  font-family: Tungsten-SemiBold !important;
+}
+
+.p-menu {
+  margin: 0 auto;
+  padding: 0;
+  font-size: 2.4rem;
+  line-height: 1.4;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  font-family: Tungsten-SemiBold;
+}
+.super-title {
+  font-size: 4rem;
+  line-height: 1;
+  letter-spacing: 3px;
+  font-family: Tungsten-Bold;
+  margin: 0;
+}
+.p-principal {
+  margin: 0 auto;
+  padding: 0;
+  font-size: 1.9rem;
+  line-height: 1.1;
+  letter-spacing: 1.5px;
+  font-family: Tungsten-Medium;
+  span {
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-family: Tungsten-SemiBold;
+  }
+}
+.title_socio {
+  font-size: 4rem;
+  line-height: 1;
+  letter-spacing: 2px;
+  font-family: Tungsten-SemiBold;
+  span {
+    display: block;
+    line-height: .8;
+    font-size: 6.8rem;
+    font-family: Tungsten-SemiBold;
+  }
+}
+.p-product {
+  margin: 0 auto;
+  padding: 0;
+  font-size: 1.8rem;
+  line-height: 1.2;
+  letter-spacing: 1.5px;
+  font-family: Tungsten-Book;
+  span {
+    color: $color-orangeText;
+    font-family: Tungsten-Bold;
+  }
+}
+.p-dark {
+  color: $color-grayDarkText;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-size: 2.5rem;
+  line-height: 1;
+  letter-spacing: 2px;
+  font-family: Tungsten-Medium;
+  span {
+    font-family: Tungsten-Bold;
+  }
+}
+.p-circle {
+  color: $color-orangeText;
+  margin: 0;
+  padding: 0;
+  font-size: 2.6rem;
+  line-height: 1;
+  letter-spacing: 3px;
+  font-family: Tungsten-Bold;
+  span {
+    font-family: Tungsten-SemiBold;
+  }
+}
+.title_peludo {
+  font-size: 4rem;
+  line-height: 1;
+  letter-spacing: 2px;
+  font-family: Tungsten-SemiBold;
+  span {
+    line-height: .8;
+    font-size: 6.8rem;
+  }
+}
+.subtitle_peludo {
+  margin: 0;
+  font-size: 4.1rem;
+  line-height: 1;
+  letter-spacing: 2px;
+  font-family: Tungsten-SemiBold;
+}
+.p_peludo {
+  margin: 0;
+  padding: 0;
+  font-size: 2.9rem;
+  text-align: center;
+  line-height: 1.1;
+  letter-spacing: 2px;
+  font-family: Tungsten-Medium;
+}
+.title_contact {
+  font-size: 3.3rem;
+  line-height: 1.4;
+  letter-spacing: 1px;
+  font-family: Tungsten-SemiBold;
+  span {
+    display: block;
+    line-height: .8;
+    font-size: 4.4rem;
+    font-family: Tungsten-SemiBold;
+  }
+}
+.subtitle_contact {
+  font-size: 2.4rem;
+  letter-spacing: 1px;
+  line-height: 1;
+  font-family: Tungsten-SemiBold;
+  span {
+    display: block;
+    line-height: .8;
+    font-size: 2.5rem;
+    font-family: Tungsten-Bold;
+  }
+}
+.p_contacto {
+  margin: 0;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  line-height: 1.2;
+  font-family: Tungsten-Book;
+}
+.p-nota{ 
+  margin: 0;
+  padding: 0;
+  font-size: 2rem;
+  text-align: center;
+  line-height: 1.1;
+  letter-spacing: 1px;
+  font-family: Tungsten-Book;
+  span {
+    letter-spacing: 1px;
+    font-family: Tungsten-Black;
+  }
+}
+.title_footer {
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  font-family: Tungsten-Medium;
+}
+.p-footer {
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  line-height: 1;
+  font-family: Tungsten-SemiBold;
+}
+
+.title_hola {
+  font-size: 5.5rem;
+  letter-spacing: 3px;
+  font-family: Tungsten-Bold;
+  span {
+    font-size: 5rem;
+    font-family: Tungsten-Medium;
+    display: block;
+  }
+}
+.title_text {
+  font-size: 3.3rem;
+  letter-spacing: 3px;
+  font-family: Tungsten-Medium;
+}
+.p-text {
+  font-size: 2.5rem;
+  letter-spacing: 3px;
+  line-height: 1;
+  font-family: Tungsten-Book;
+}
+.title_info {
+  font-size: 2.8rem;
+  line-height: 1.1;
+  letter-spacing: 2px;
+  font-family: Tungsten-Book;
+}
+.p-info {
+  font-size: 4.1rem;
+  letter-spacing: 3px;
+  line-height: 1;
+  font-family: Tungsten-Bold;
+}
+.title_tabla {
+  margin: 0;
+  padding: 0;
+  font-size: 2.5rem;
+  letter-spacing: 3px;
+  line-height: 1;
+  font-family: Tungsten-SemiBold;
+  text-transform: uppercase;
+}
+.p-tableI {
+  font-size: 2.8rem;
+  letter-spacing: 1px;
+  line-height: 1;
+  font-family: Tungsten-Book;
+}
+.p-tableD {
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+  line-height: 1.1;
+  font-family: Tungsten-Bold;
+}
+
+
+.titleMascotas {
+  font-size: 5rem;
+  letter-spacing: 3px;
+  line-height: 1;
+  font-family: Tungsten-SemiBold;
+}
+.titleCard {
+  font-size: 3rem;
+  letter-spacing: 1px;
+  line-height: 1;
+  font-family: Tungsten-SemiBold;
+}
+
+/* ---- Btns ---- */
+.btnOrange_sm {
+  margin: 1rem auto;
+  width: fit-content;
+  padding: .1rem 1.5rem .3rem;
+  background-color: $color-orangeBtn;
+  border-radius: .7rem;
+  .text_btnO{
+    color: $color-white;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-size: 1.9rem;
+    text-align: center;
+    line-height: 1;
+    letter-spacing: 2px;
+    font-family: Tungsten-Light;
+  }
+}
+.btnOrange_lg {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  width: 75%;
+  padding: .2rem 0;
+  background-color: $color-orangeBtn;
+  border-radius: .9rem;
+  .text_btnO{
+    color: $color-white;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-size: 2.2rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-family: Tungsten-SemiBold;
+  }
+}
+.btnGreen_xl {
+  width: fit-content;
+  margin: auto;
+  padding: 0 5rem;
+  background-color: $color-greenBtn;
+  border-radius: .9rem;
+  border: 3px solid $color-white;
+  .text_btnO{
+    color: $color-white;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-size: 2.2rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-family: Tungsten-SemiBold;
+  }
+}
+.btnGreen_sm {
+  width: fit-content;
+  margin: auto auto 6rem;
+  padding: .2rem 2.5rem;
+  background-color: $color-greenBtn;
+  border-radius: .9rem;
+  border: 3px solid $color-white;
+  .text_btnO{
+    color: $color-white;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-size: 1.9rem;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1.1;
+    letter-spacing: 3px;
+    font-family: Tungsten-SemiBold;
+  }
+}
+.btnGreen_sm, .btnGreen_xl, .btnOrange_lg, .btnOrange_sm {
+  a {
+    color: $color-white;
+    text-decoration: none;
+  }
+}
+
+/* ------------------------- */
+/* ------- Media Query ------*/
+
+@media (max-width:1440px) {
+  .p-menu {
+    font-size: 2.2rem;
+  }
+  .super-title {
+    font-size: 3.6rem;
+  }
+  .p-principal {
+    font-size: 1.6rem;
+    span {
+      font-size: 1.8rem;
+    }
+  }
+  .title_socio {
+    font-size: 4rem;
+    span {
+      font-size: 5.5rem;
+    }
+  }
+  .p-product {
+    margin: 0 auto;
+    padding: 0;
+    font-size: 1.7rem;
+  }
+  .p-dark {
+    color: $color-grayDarkText;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-size: 2.3rem;
+  }
+  .p-circle {
+    font-size: 2rem;
+  }
+  .title_peludo {
+    font-size: 3.5rem;
+    span {
+      font-size: 6rem;
+    }
+  }
+  .subtitle_peludo {
+    font-size: 3.5rem;
+  }
+  .p_peludo {
+    font-size: 2.2rem;
+  }
+  .title_contact {
+    font-size: 3.3rem;
+    span {
+      font-size: 4.4rem;
+    }
+  }
+  .subtitle_contact {
+    font-size: 2.2rem;
+    span {
+      font-size: 2.3rem;
+    }
+  }
+  .p_contacto {
+    font-size: 2rem;
+  }
+  .p-nota{
+    font-size: 1.8rem;
+  }
+  .title_footer {
+    font-size: 1.3rem;
+  }
+  .p-footer {
+    font-size: 1.1rem;
+  }
+  
+  .title_hola {
+    font-size: 5.5rem;
+    letter-spacing: 3px;
+    font-family: Tungsten-Bold;
+    span {
+      font-size: 5rem;
+      font-family: Tungsten-Medium;
+      display: block;
+    }
+  }
+  .title_text {
+    font-size: 3.3rem;
+    letter-spacing: 3px;
+    font-family: Tungsten-Medium;
+  }
+  .p-text {
+    font-size: 2.5rem;
+    letter-spacing: 3px;
+    line-height: 1;
+    font-family: Tungsten-Book;
+  }
+  .title_info {
+    font-size: 2.8rem;
+    line-height: 1.1;
+    letter-spacing: 2px;
+    font-family: Tungsten-Book;
+  }
+  .p-info {
+    font-size: 4.1rem;
+    letter-spacing: 3px;
+    line-height: 1;
+    font-family: Tungsten-Bold;
+  }
+  .title_tabla {
+    margin: 0;
+    padding: 0;
+    font-size: 2.5rem;
+    letter-spacing: 3px;
+    line-height: 1;
+    font-family: Tungsten-SemiBold;
+    text-transform: uppercase;
+  }
+  .p-tableI {
+    font-size: 2.8rem;
+    letter-spacing: 1px;
+    line-height: 1;
+    font-family: Tungsten-Book;
+  }
+  .p-tableD {
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    line-height: 1.1;
+    font-family: Tungsten-Bold;
+  }
+  
+  
+  .titleMascotas {
+    font-size: 5rem;
+    letter-spacing: 3px;
+    line-height: 1;
+    font-family: Tungsten-SemiBold;
+  }
+  .titleCard {
+    font-size: 3rem;
+    letter-spacing: 1px;
+    line-height: 1;
+    font-family: Tungsten-SemiBold;
+  }
+  
+  /* ---- Btns ---- */
+  .btnOrange_sm {
+    padding: .1rem 1rem .3rem;
+    .text_btnO{
+      font-size: 1.5rem;
+    }
+  }
+  .btnOrange_lg {
+    width: 100%;
+    .text_btnO{
+      font-size: 2rem;
+    }
+  }
+  .btnGreen_xl {
+    width: fit-content;
+    margin: auto;
+    padding: 0 5rem;
+    background-color: $color-greenBtn;
+    border-radius: .9rem;
+    border: 3px solid $color-white;
+    .text_btnO{
+      color: $color-white;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      font-size: 2.2rem;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-family: Tungsten-SemiBold;
+    }
+  }
+  .btnGreen_sm {
+    width: fit-content;
+    margin: auto auto 6rem;
+    padding: .2rem 2.5rem;
+    background-color: $color-greenBtn;
+    border-radius: .9rem;
+    border: 3px solid $color-white;
+    .text_btnO{
+      color: $color-white;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      font-size: 1.9rem;
+      text-align: center;
+      text-transform: uppercase;
+      line-height: 1.1;
+      letter-spacing: 3px;
+      font-family: Tungsten-SemiBold;
+    }
+  }
+}
+@media (max-width:1024px) {
+  .super-title {
+    font-size: 2.8rem;
+  }
+  .p-principal {
+    font-size: 1.1rem;
+    span {
+      font-size: 1.4rem;
+    }
+  }
+  .title_socio {
+    font-size: 3.4rem;
+    span {
+      font-size: 4.5rem;
+    }
+  }
+  .p-product {
+    margin: 0 auto;
+    padding: 0;
+    font-size: 1.3rem;
+  }
+  .p-dark {
+    color: $color-grayDarkText;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-size: 2rem;
+  }
+  .p-circle {
+    color: $color-orangeText;
+    margin: 0;
+    padding: 0;
+    font-size: 2rem;
+    line-height: 1;
+    letter-spacing: 3px;
+    font-family: Tungsten-Bold;
+    span {
+      font-family: Tungsten-SemiBold;
+    }
+  }
+  .title_peludo {
+    font-size: 3.5rem;
+    span {
+      font-size: 6rem;
+    }
+  }
+  .subtitle_peludo {
+    font-size: 3.5rem;
+  }
+  .p_peludo {
+    font-size: 2.2rem;
+  }
+  .title_contact {
+    font-size: 2.8rem;
+    span {
+      font-size: 3.2rem;
+    }
+  }
+  .subtitle_contact {
+    font-size: 1.8rem;
+    span {
+      font-size: 1.9rem;
+    }
+  }
+  .p_contacto {
+    font-size: 1.6rem;
+  }
+  .p-nota{
+    font-size: 1.3rem;
+  }
+  .title_footer {
+    font-size: 1.1rem;
+  }
+  .p-footer {
+    font-size: .9rem;
+  }
+  
+  .title_hola {
+    font-size: 5.5rem;
+    letter-spacing: 3px;
+    font-family: Tungsten-Bold;
+    span {
+      font-size: 5rem;
+      font-family: Tungsten-Medium;
+      display: block;
+    }
+  }
+  .title_text {
+    font-size: 3.3rem;
+    letter-spacing: 3px;
+    font-family: Tungsten-Medium;
+  }
+  .p-text {
+    font-size: 2.5rem;
+    letter-spacing: 3px;
+    line-height: 1;
+    font-family: Tungsten-Book;
+  }
+  .title_info {
+    font-size: 2.8rem;
+    line-height: 1.1;
+    letter-spacing: 2px;
+    font-family: Tungsten-Book;
+  }
+  .p-info {
+    font-size: 4.1rem;
+    letter-spacing: 3px;
+    line-height: 1;
+    font-family: Tungsten-Bold;
+  }
+  .title_tabla {
+    margin: 0;
+    padding: 0;
+    font-size: 2.5rem;
+    letter-spacing: 3px;
+    line-height: 1;
+    font-family: Tungsten-SemiBold;
+    text-transform: uppercase;
+  }
+  .p-tableI {
+    font-size: 2.8rem;
+    letter-spacing: 1px;
+    line-height: 1;
+    font-family: Tungsten-Book;
+  }
+  .p-tableD {
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    line-height: 1.1;
+    font-family: Tungsten-Bold;
+  }
+  
+  
+  .titleMascotas {
+    font-size: 5rem;
+    letter-spacing: 3px;
+    line-height: 1;
+    font-family: Tungsten-SemiBold;
+  }
+  .titleCard {
+    font-size: 3rem;
+    letter-spacing: 1px;
+    line-height: 1;
+    font-family: Tungsten-SemiBold;
+  }
+  
+  /* ---- Btns ---- */
+  .btnOrange_sm {
+    padding: .1rem 1rem .3rem;
+    .text_btnO{
+      font-size: 1.5rem;
+    }
+  }
+  .btnOrange_lg {
+    width: 100%;
+    .text_btnO{
+      font-size: 2rem;
+    }
+  }
+  .btnGreen_xl {
+    width: fit-content;
+    margin: auto;
+    padding: 0 5rem;
+    background-color: $color-greenBtn;
+    border-radius: .9rem;
+    border: 3px solid $color-white;
+    .text_btnO{
+      color: $color-white;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      font-size: 2.2rem;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-family: Tungsten-SemiBold;
+    }
+  }
+  .btnGreen_sm {
+    width: fit-content;
+    margin: auto auto 6rem;
+    padding: .2rem 2.5rem;
+    background-color: $color-greenBtn;
+    border-radius: .9rem;
+    border: 3px solid $color-white;
+    .text_btnO{
+      color: $color-white;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      font-size: 1.9rem;
+      text-align: center;
+      text-transform: uppercase;
+      line-height: 1.1;
+      letter-spacing: 3px;
+      font-family: Tungsten-SemiBold;
+    }
+  }
+}
+@media (max-width:968px) {
+  .p-menu {
+    font-size: 2.2rem;
+  }
+  .super-title {
+    font-size: 2.2rem;
+  }
+  .p-principal {
+    font-size: 1.1rem;
+    span {
+      font-size: 1.4rem;
+    }
+  }
+  .title_socio {
+    font-size: 2.8rem;
+    span {
+      font-size: 3.5rem;
+    }
+  }
+  .p-product {
+    margin: 0 auto;
+    padding: 0;
+    font-size: 1.2rem;
+  }
+  .p-dark {
+    color: $color-grayDarkText;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-size: 2rem;
+  }
+  .p-circle {
+    color: $color-orangeText;
+    margin: 0;
+    padding: 0;
+    font-size: 2rem;
+    line-height: 1;
+    letter-spacing: 3px;
+    font-family: Tungsten-Bold;
+    span {
+      font-family: Tungsten-SemiBold;
+    }
+  }
+  .title_peludo {
+    font-size: 3.5rem;
+    span {
+      font-size: 6rem;
+    }
+  }
+  .subtitle_peludo {
+    font-size: 3.5rem;
+  }
+  .p_peludo {
+    font-size: 2.2rem;
+  }
+  .title_contact {
+    font-size: 2.8rem;
+    span {
+      font-size: 3.2rem;
+    }
+  }
+  .subtitle_contact {
+    font-size: 1.8rem;
+    span {
+      font-size: 1.9rem;
+    }
+  }
+  .p_contacto {
+    font-size: 1.6rem;
+  }
+  .p-nota{
+    font-size: 1.3rem;
+  }
+  .title_footer {
+    font-size: 1.1rem;
+  }
+  .p-footer {
+    font-size: .9rem;
+  }
+  
+  .title_hola {
+    font-size: 5.5rem;
+    letter-spacing: 3px;
+    font-family: Tungsten-Bold;
+    span {
+      font-size: 5rem;
+      font-family: Tungsten-Medium;
+      display: block;
+    }
+  }
+  .title_text {
+    font-size: 3.3rem;
+    letter-spacing: 3px;
+    font-family: Tungsten-Medium;
+  }
+  .p-text {
+    font-size: 2.5rem;
+    letter-spacing: 3px;
+    line-height: 1;
+    font-family: Tungsten-Book;
+  }
+  .title_info {
+    font-size: 2.8rem;
+    line-height: 1.1;
+    letter-spacing: 2px;
+    font-family: Tungsten-Book;
+  }
+  .p-info {
+    font-size: 4.1rem;
+    letter-spacing: 3px;
+    line-height: 1;
+    font-family: Tungsten-Bold;
+  }
+  .title_tabla {
+    margin: 0;
+    padding: 0;
+    font-size: 2.5rem;
+    letter-spacing: 3px;
+    line-height: 1;
+    font-family: Tungsten-SemiBold;
+    text-transform: uppercase;
+  }
+  .p-tableI {
+    font-size: 2.8rem;
+    letter-spacing: 1px;
+    line-height: 1;
+    font-family: Tungsten-Book;
+  }
+  .p-tableD {
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    line-height: 1.1;
+    font-family: Tungsten-Bold;
+  }
+  
+  
+  .titleMascotas {
+    font-size: 5rem;
+    letter-spacing: 3px;
+    line-height: 1;
+    font-family: Tungsten-SemiBold;
+  }
+  .titleCard {
+    font-size: 3rem;
+    letter-spacing: 1px;
+    line-height: 1;
+    font-family: Tungsten-SemiBold;
+  }
+  
+  /* ---- Btns ---- */
+  .btnOrange_sm {
+    padding: .1rem 1rem .3rem;
+    .text_btnO{
+      font-size: 1.5rem;
+    }
+  }
+  .btnOrange_lg {
+    width: 100%;
+    .text_btnO{
+      font-size: 2rem;
+    }
+  }
+  .btnGreen_xl {
+    width: fit-content;
+    margin: auto;
+    padding: 0 5rem;
+    background-color: $color-greenBtn;
+    border-radius: .9rem;
+    border: 3px solid $color-white;
+    .text_btnO{
+      color: $color-white;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      font-size: 2.2rem;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-family: Tungsten-SemiBold;
+    }
+  }
+  .btnGreen_sm {
+    width: fit-content;
+    margin: auto auto 6rem;
+    padding: .2rem 2.5rem;
+    background-color: $color-greenBtn;
+    border-radius: .9rem;
+    border: 3px solid $color-white;
+    .text_btnO{
+      color: $color-white;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      font-size: 1.9rem;
+      text-align: center;
+      text-transform: uppercase;
+      line-height: 1.1;
+      letter-spacing: 3px;
+      font-family: Tungsten-SemiBold;
+    }
+  }
+}
+@media (max-width:767px) {
+  .p-menu {
+    font-size: 2.4rem;
+  }
+  .super-title {
+    font-size: 3rem;
+  }
+  .p-principal {
+    font-size: 1.5rem;
+    span {
+      font-size: 1.6rem;
+    }
+  }
+  .title_socio {
+    font-size: 2.2rem;
+    font-family: Tungsten-Bold;
+    span {
+      font-size: 3rem;
+      font-family: Tungsten-Bold;
+    }
+  }
+  .p-product {
+    font-size: 1rem;
+  }
+  .p-dark {
+    letter-spacing: 1px;
+    font-size: 1.5rem;
+  }
+  .p-circle {
+    font-size: 1.6rem;
+  }
+  .title_peludo {
+    font-size: 3rem;
+    span {
+      font-size: 5rem;
+    }
+  }
+  .subtitle_peludo {
+    font-family: Tungsten-Bold;
+    font-size: 3rem;
+  }
+  .p_peludo {
+    font-size: 1.9rem;
+    letter-spacing: 1px;
+  }
+  .title_contact {
+    font-size: 2.2rem;
+    span {
+      font-size: 2.6rem;
+    }
+  }
+  .subtitle_contact {
+    font-size: 1.8rem;
+    span {
+      font-size: 2rem;
+    }
+  }
+  .p_contacto {
+    font-size: 1.5rem;
+  }
+  .p-nota{ 
+    font-size: 1.3rem;
+  }
+  .title_footer {
+    font-size: 1rem;
+  }
+  .p-footer {
+    font-size: 0.8rem;
+    line-height: 2;
+  }
+  .title_hola {
+    font-size: 4rem;
+    span {
+      font-size: 4rem;
+    }
+  }
+  .title_text {
+    font-size: 2.8rem;
+  }
+  .p-text {
+    font-size: 2rem;
+    br {
+      display: none;
+    }
+  }
+  .title_info {
+    font-size: 2rem;
+  }
+  .p-info {
+    font-size: 2.5rem;
+  }
+  .title_tabla {
+    font-size: 1.8rem;
+  }
+  .p-tableI {
+    font-size: 1.4rem;
+    line-height: 1.1;
+  }
+  .p-tableD {
+    font-size: 1.5rem;
+  }
+
+  /* ---- Btns ---- */
+  .btnOrange_sm {
+    .text_btnO{
+      font-size: 1.7rem;
+    }
+  }
+  .btnOrange_lg {
+    border-radius: 1rem;
+    padding: .1rem 0;
+    .text_btnO{
+      font-size: 1.5rem;
+    }
+  }
+  .btnGreen_xl {
+    padding: 0;
+    .text_btnO {
+      font-size: 1.3rem;
+    }
+    width: 55%;
+  }
+  .btnGreen_sm {
+    border-radius: .6rem;
+    padding: .3rem 2.5rem;
+    .text_btnO{
+      letter-spacing: 1px;
+      font-size: 1.2rem;
+    }
+  }
+}
