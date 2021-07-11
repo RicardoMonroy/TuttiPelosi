@@ -37,3 +37,7 @@ Route::group(['middleware' => 'auth'], function () {
     Route::resource('pictures', 'PicturesController');
 });
 
+// Para generar el storage link
+Route::get('storage-link', function(){
+    Artisan::call('storage:link');
+});

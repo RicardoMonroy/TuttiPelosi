@@ -6,6 +6,7 @@ use App\Pet;
 use App\Picture;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\Validator;
 
 class PicturesController extends Controller
 {
@@ -42,6 +43,16 @@ class PicturesController extends Controller
      */
     public function store(Request $request)
     {
+
+        $validator = Validator::make($request->all(), [
+            'picture' => 'max:10240',
+        ]);
+
+        if ($validator->fails())
+        {
+            return redirect()->back()->withInput()->withErrors($validator->errors());
+        }
+
         $hoy = date("Y-m-d H:i:s");
         $pet = Pet::find($request->pet);
 
