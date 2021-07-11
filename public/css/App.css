@@ -5091,3 +5091,22 @@ body {
 #misMascotas.content .wp_bodyInfo .wp_buttonNew .btnNewTg {
   padding: 0 3.5rem;
 }
+
+@media (max-width: 700px) {
+    #misMascotas.content .wp_card {
+        width: 70%;
+    }
+}
+
+@media (max-width: 500px) {
+    #misMascotas.content .wp_card {
+        width: 80%;
+    }
+}
+
+@media (max-width: 400px) {
+    #misMascotas.content .wp_card {
+        width: 90%;
+    }
+}
+

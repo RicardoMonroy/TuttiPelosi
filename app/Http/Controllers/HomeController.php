@@ -21,6 +21,21 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('dashboard');
+        $user = auth()->user();
+
+        if( isset($user->owner) ){
+            $owner = $user->owner;
+        }else{
+            $owner = NULL;
+        }
+
+
+        if( isset($user->owner->pets) ){
+            $pets = $user->owner->pets;
+        }else{
+            $pets = NULL;
+        }
+
+        return view('dashboard', compact('pets', 'owner'));
     }
 }

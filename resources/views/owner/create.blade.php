@@ -35,7 +35,7 @@
                             <div class="pl-lg-4">
                                 <div class="form-group{{ $errors->has('address') ? ' has-danger' : '' }}">
                                     <label class="form-control-label" for="input-address">Dirección</label>
-                                    <input type="text" name="address" id="input-address" class="form-control form-control-alternative{{ $errors->has('address') ? ' is-invalid' : '' }}" placeholder="Dirección..." value="" required autofocus>
+                                    <input type="text" name="address" id="input-address" class="form-control form-control-alternative{{ $errors->has('address') ? ' is-invalid' : '' }}" placeholder="Dirección..." value="" autofocus>
 
                                     @if ($errors->has('address'))
                                         <span class="invalid-feedback" role="alert">
@@ -45,7 +45,7 @@
                                 </div>
                                 <div class="form-group{{ $errors->has('city') ? ' has-danger' : '' }}">
                                     <label class="form-control-label" for="input-city">Ciudad</label>
-                                    <input type="text" name="city" id="input-city" class="form-control form-control-alternative{{ $errors->has('city') ? ' is-invalid' : '' }}" placeholder="Ciudad..." value="" required>
+                                    <input type="text" name="city" id="input-city" class="form-control form-control-alternative{{ $errors->has('city') ? ' is-invalid' : '' }}" placeholder="Ciudad..." value="" >
 
                                     @if ($errors->has('city'))
                                         <span class="invalid-feedback" role="alert">
@@ -55,7 +55,7 @@
                                 </div>
                                 <div class="form-group{{ $errors->has('state') ? ' has-danger' : '' }}">
                                     <label class="form-control-label" for="input-state">Estado</label>
-                                    <input type="text" name="state" id="input-state" class="form-control form-control-alternative{{ $errors->has('state') ? ' is-invalid' : '' }}" placeholder="Estádo de residencia..." value="" required>
+                                    <input type="text" name="state" id="input-state" class="form-control form-control-alternative{{ $errors->has('state') ? ' is-invalid' : '' }}" placeholder="Estádo de residencia..." value="" >
 
                                     @if ($errors->has('state'))
                                         <span class="invalid-feedback" role="alert">
@@ -65,7 +65,7 @@
                                 </div>
                                 <div class="form-group{{ $errors->has('phone') ? ' has-danger' : '' }}">
                                     <label class="form-control-label" for="input-phone">Teléfono de contácto</label>
-                                    <input type="text" name="phone" id="input-phone" class="form-control form-control-alternative{{ $errors->has('phone') ? ' is-invalid' : '' }}" placeholder="Teléfono principal..." value="" required>
+                                    <input type="text" name="phone" id="input-phone" class="form-control form-control-alternative{{ $errors->has('phone') ? ' is-invalid' : '' }}" placeholder="Teléfono principal..." value="" >
 
                                     @if ($errors->has('phone'))
                                         <span class="invalid-feedback" role="alert">
