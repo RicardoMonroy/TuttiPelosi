@@ -103,7 +103,7 @@
                     <h2 class="title_hola">Hola...! soy <span>{{ $pet->name }}</span></h2>
                     <div class="card_foto">
                         @if ( isset($cover->picture) )
-                            <img src="{{ asset('storage') }}/{{ $cover->picture }}" class="" style="width: 95%; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%);">
+                            <img src="{{ asset('storage') }}/{{ $cover->picture }}" class="" style="max-width: 95%; max-height: 95%; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%);">
                         @else
                         <p class="placeholder_foto">
                             No hay nunguna foto <br/><br> Esperemos a que el humano <br> suba algunas...

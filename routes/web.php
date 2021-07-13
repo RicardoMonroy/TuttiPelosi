@@ -39,6 +39,6 @@ Route::group(['middleware' => 'auth'], function () {
 });
 
 // Para generar el storage link
-Route::get('storage-link', function(){
-    Artisan::call('storage:link');
-});
+// Route::get('storage-link', function(){
+//     Artisan::call('storage:link');
+// });
