@@ -303,7 +303,7 @@
                     <div class="col" style="z-index: 5" >
                         <div class="btnGreen_sm">
                             <a href="pages/identificacion.html">
-                                <p class="text_btnO">conocer más</p>
+                                <p class="text_btnO">Conectar</p>
                             </a>
                         </div>
                     </div>
