@@ -313,18 +313,22 @@
                         <div class="content_circleDog">
                             <div class="d-flex justify-content-end p-0">
                                 <div class="content_img">
-                                    <div class="img_center" id="circle-dog">
-                                        <img src="images/circle-perfil.png" alt=""/>
-                                        <p class="p-circle">MI PERFIL</p>
-                                    </div>
+                                    <a href="{{ route('home') }}">
+                                        <div class="img_center" id="circle-dog">
+                                            <img src="images/circle-perfil.png" alt=""/>
+                                            <p class="p-circle">MI PERFIL</p>
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
                             <div class="d-flex justify-content-start p-0">
                                 <div class="content_img">
-                                    <div class="img_center" id="circle-qr">
-                                        <img src="images/circle-registrarse.png" alt=""/>
-                                        <p class="p-circle">REGÍSTRATE <span>(TAG)</span> </p>
-                                    </div>
+                                    <a href="{{ route('register') }}">
+                                        <div class="img_center" id="circle-qr">
+                                            <img src="images/circle-registrarse.png" alt=""/>
+                                            <p class="p-circle">REGÍSTRATE <span>(TAG)</span> </p>
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
                         </div>
