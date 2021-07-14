@@ -24,9 +24,9 @@
                             </button>
                             <a href="{{ route('welcome') }}" class="logo_center"> <img src="../images/logo.png" alt="logo_tuttipelosi"/> </a>
                             <div class="social_media d-flex">
-                                <div class="icon"><a href="https://www.facebook.com/Tutti-Pelosi-100930825425191"><i class="fab fa-instagram-square"></i></a></div>
-                                <div class="icon"><a href="https://www.facebook.com/Tutti-Pelosi-100930825425191"><i class="fab fa-whatsapp-square" ></i></a></div>
-                                <div class="icon"><a href="https://www.facebook.com/Tutti-Pelosi-100930825425191"><i class="fab fa-facebook-square" ></i></a></div>
+                                <div class="icon"><a href="https://www.instagram.com/tuttipelosi/" target="_blank"><i class="fab fa-instagram-square"></i></a></div>
+                                {{-- <div class="icon"><a href="https://www.facebook.com/Tutti-Pelosi-100930825425191"><i class="fab fa-whatsapp-square" ></i></a></div> --}}
+                                <div class="icon"><a href="https://www.facebook.com/Tutti-Pelosi-100930825425191" target="_blank"><i class="fab fa-facebook-square" ></i></a></div>
                             </div>
                     </nav>
                 </div>
@@ -101,9 +101,9 @@
             <div class="row">
                 <div class="col container_hola p-0">
                     <h2 class="title_hola">Hola...! soy <span>{{ $pet->name }}</span></h2>
-                    <div class="card_foto">
+                    <div class="card_foto" style="background-color: transparent;">
                         @if ( isset($cover->picture) )
-                            <img src="{{ asset('storage') }}/{{ $cover->picture }}" class="" style="max-width: 95%; max-height: 95%; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%);">
+                            <img src="{{ asset('storage') }}/{{ $cover->picture }}" class="" style="max-width: 100%; max-height: 100%; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); border-radius: 5%;">
                         @else
                         <p class="placeholder_foto">
                             No hay nunguna foto <br/><br> Esperemos a que el humano <br> suba algunas...

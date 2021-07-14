@@ -24,9 +24,9 @@
                             </button>
                             <a href="{{ route('welcome') }}" class="logo_center"> <img src="./images/logo.png" alt="logo_tuttipelosi"/> </a>
                             <div class="social_media d-flex">
-                                <div class="icon"><a href="https://www.facebook.com/Tutti-Pelosi-100930825425191"><i class="fab fa-instagram-square"></i></a></div>
-                                <div class="icon"><a href="https://www.facebook.com/Tutti-Pelosi-100930825425191"><i class="fab fa-whatsapp-square" ></i></a></div>
-                                <div class="icon"><a href="https://www.facebook.com/Tutti-Pelosi-100930825425191"><i class="fab fa-facebook-square" ></i></a></div>
+                                <div class="icon"><a href="https://www.instagram.com/tuttipelosi/" target="_blank"><i class="fab fa-instagram-square"></i></a></div>
+                                {{-- <div class="icon"><a href="https://www.facebook.com/Tutti-Pelosi-100930825425191"><i class="fab fa-whatsapp-square" ></i></a></div> --}}
+                                <div class="icon"><a href="https://www.facebook.com/Tutti-Pelosi-100930825425191" target="_blank"><i class="fab fa-facebook-square" ></i></a></div>
                             </div>
                     </nav>
                 </div>
@@ -66,7 +66,7 @@
                     <div class="content_info">
                         <div class="img_left"><img src="./images/cel-qr.png" alt=""/></div>
                         <div class="content_text">
-                        <h2 class="super-title">IDENTIFICACIÓN QR PARA SU PELUDO</h2>
+                        <h2 class="super-title">IDENTIFICACIÓN QR PARA TU PELUDO</h2>
                         <div id="mobile_visiblecel">
                             <img class="img_cel_mobile" src="./images/cel-qr.png" alt=""/>
                             <img class="img_center" src="./images/medalla-qr2.png" alt=""/>
@@ -93,14 +93,14 @@
                                 <p class="p-principal">Para recompensar sus grandes logros</p>
                             </div>
                             <div class="btnOrange_sm show_lg">
-                                <a href="#">
+                                <a href="http://www.tuttipelosi.facilqr.com/inf1/" target="_blank">
                                     <p class="text_btnO">conocer más</p>
                                 </a>
                             </div>
                         </div>
                         <div class="img_right"><img src="images/dogs4.png" alt=""/></div>
                         <div class="btnOrange_sm hidden_lg">
-                            <a href="#">
+                            <a href="http://www.tuttipelosi.facilqr.com/inf1/" target="_blank">
                                 <p class="text_btnO">conocer más</p>
                             </a>
                         </div>
@@ -123,14 +123,14 @@
                                 </p>
                             </div>
                             <div class="btnOrange_sm show_lg">
-                                <a href="#">
+                                <a href="http://www.tuttipelosi.facilqr.com/inf2/" target="_blank">
                                     <p class="text_btnO">conocer más</p>
                                 </a>
                             </div>
                         </div>
                         <div class="img_right"><img src="images/producto6.png" alt=""/></div>
                         <div class="btnOrange_sm hidden_lg">
-                            <a href="#">
+                            <a href="http://www.tuttipelosi.facilqr.com/inf2/" target="_blank">
                                 <p class="text_btnO">conocer más</p>
                             </a>
                         </div>
@@ -146,7 +146,7 @@
                         <div class="content_text">
                             <h2 class="text-yellow title_socio">Conviértete en <span>Socio Comercial</span></h2>
                             <div class="btnOrange_lg">
-                                <a href="#">
+                                <a href="http://www.tuttipelosi.facilqr.com/inf3/" target="_blank">
                                     <p class="text_btnO">Beneficios</p>
                                 </a>
                             </div>
@@ -165,7 +165,7 @@
                     <div class="content_text">
                         <p class="p-product">Escanea el <span>TAG QR</span> de tu peludo y obten toda su información</p>
                         <div class="btnOrange_sm">
-                            <a href="#">
+                            <a href="http://www.tuttipelosi.facilqr.com/inf4/" target="_blank">
                                 <p class="text_btnO">conocer más</p>
                             </a>
                         </div>
@@ -178,7 +178,7 @@
                     <div class="content_text">
                         <p class="p-product">Escanea el <span>TAG QR</span> de tu peludo y obten toda su información</p>
                         <div class="btnOrange_sm ">
-                            <a href="#">
+                            <a href="http://www.tuttipelosi.facilqr.com/inf4/" target="_blank">
                                 <p class="text_btnO">conocer más</p>
                             </a>
                         </div>
@@ -193,7 +193,7 @@
                     <div class="content_text reset_p">
                         <p class="p-product span_block"><span>Huesos Naturales</span> para los peludos de mayor tamaño! <br/> Premia sus grandes logros mientras lo fortaleces <br/> con calcio, hierro, vitaminas y minerales</p>
                         <div class="btnOrange_sm ">
-                            <a href="#">
+                            <a href="http://www.tuttipelosi.facilqr.com/inf1/" target="_blank">
                                 <p class="text_btnO">conocer más</p>
                             </a>
                         </div>
@@ -206,7 +206,7 @@
                     <div class="content_text reset_p">
                         <p class="p-product span_block"> <span id="lg_hidden">Palitos de Carnaza con Pollo.</span> Irresistible <span id="sm_hidden">Palitos de Carnaza con Pollo</span> para limpiar los dientes y premiar el esfuerzo y éxito de tu mascota</p>
                         <div class="btnOrange_sm ">
-                            <a href="#">
+                            <a href="http://www.tuttipelosi.facilqr.com/inf1/" target="_blank">
                                 <p class="text_btnO">conocer más</p>
                             </a>
                         </div>
@@ -221,7 +221,7 @@
                     <div class="content_text reset_p">
                         <p class="p-product span_block">Deliciosa <span>Carne de Pollo Seca</span> para consentir a perros y gatos con <br /> una botana que es 100% proteína natural</p>
                         <div class="btnOrange_sm ">
-                            <a href="#">
+                            <a href="http://www.tuttipelosi.facilqr.com/inf1/" target="_blank">
                                 <p class="text_btnO">conocer más</p>
                             </a>
                         </div>
@@ -234,7 +234,7 @@
                     <div class="content_text reset_p">
                         <p class="p-product span_block py-lg-3 py-2"><span>Colágeno Hidrolizado</span> para recuperar la movilidad y energía reduciendo dolores en las articulaciones</p>
                         <div class="btnOrange_sm ">
-                            <a href="#">
+                            <a href="http://www.tuttipelosi.facilqr.com/inf2/" target="_blank">
                                 <p class="text_btnO">conocer más</p>
                             </a>
                         </div>
@@ -245,7 +245,7 @@
         <div class="row">
             <div class="gb-gray contentBtn">
                 <div class="btnGreen_xl">
-                    <a href="#">
+                    <a href="#contacto">
                         <p class="text_btnO">Contáctanos</p>
                     </a>
                 </div>
@@ -382,7 +382,7 @@
                 <div class="gb-gray p-0 row">
                     <div class="col-12">
                         <div class="btnGreen_xl">
-                            <a href="#">
+                            <a href="http://www.tuttipelosi.facilqr.com/inf1/" target="_blank">
                                 <p class="text_btnO">SABER MÁS</p>
                             </a>
                         </div>
@@ -447,7 +447,7 @@
                 <div class="row gb-gray p-0 ">
                     <div class="col-12">
                         <div class="btnGreen_xl">
-                            <a href="www.google.com">
+                            <a href="http://www.tuttipelosi.facilqr.com/inf2/" target="_blank">
                                 <p class="text_btnO">SABER MÁS</p>
                             </a>
                         </div>
@@ -458,7 +458,7 @@
         <!-- Seccion Morada FIN-->
 
         <!-- Seccion de Contacto -->
-        <div class="row">
+        <div class="row" id="contacto">
             <div class="col container-contact">
               <div class="container px-5">
                   <div class="row">
@@ -493,9 +493,9 @@
                                       <p class="p_contacto"><a href="mailto:Contacto@tuttipelosi.com">Contacto@tuttipelosi.com</a></p>
                                   </div>
                                   <div class="social_media">
-                                      <div class="icon"><a href="https://www.facebook.com/Tutti-Pelosi-100930825425191"><i class="fab fa-whatsapp-square" ></i></a></div>
-                                      <div class="icon"><a href="https://www.facebook.com/Tutti-Pelosi-100930825425191"><i class="fab fa-instagram-square" ></i></a></div>
-                                      <div class="icon"><a href="https://www.facebook.com/Tutti-Pelosi-100930825425191"><i class="fab fa-facebook-square" ></i></a></div>
+                                      {{-- <div class="icon"><a href="https://www.facebook.com/Tutti-Pelosi-100930825425191"><i class="fab fa-whatsapp-square" ></i></a></div> --}}
+                                      <div class="icon"><a href="https://www.instagram.com/tuttipelosi/" target="_blank"><i class="fab fa-instagram-square" ></i></a></div>
+                                      <div class="icon"><a href="https://www.facebook.com/Tutti-Pelosi-100930825425191" target="_blank"><i class="fab fa-facebook-square" ></i></a></div>
                                   </div>
                               </div>
                           </div>
@@ -524,14 +524,14 @@
                           <div class="content-p">
                               <p class="title_footer">Tutti Pelosi / 2021 /Todos los derechos reservados</p>
                               <img src="images/logo-gris.png" alt="" id="logo_footer"/>
-                              <div class="footer-nav">
+                              {{-- <div class="footer-nav">
                                   <ul>
                                       <li class="p-footer"><a href="index.html">PLACA QR</a></li>
                                       <li class="p-footer"><a href="index.html">HUESOS</a></li>
                                       <li class="p-footer"><a href="index.html">PECHUGAS DE POLLO</a></li>
                                       <li class="p-footer"><a href="index.html">PALITOS CARNASA DE POLLO</a></li>
                                   </ul>
-                              </div>
+                              </div> --}}
                           </div>
                       </div>
                   </div>
