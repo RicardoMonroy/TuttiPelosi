@@ -40,13 +40,12 @@
                             <div class="col-12 p-0">
                                 <div class="content_menu">
                                     <ul class="content_ul">
-                                        <li class="p-menu"> <a href="{{ route('P.index') }}">Contacta a mi Dueño</a> </li>
-                                        <li class="p-menu"> <a href="{{ route('P.index') }}">Segundo Contacto</a> </li>
+                                        <li class="p-menu"> <a href="{{ route('P.index') }}">Datos Generales</a> </li>
                                         <li class="p-menu"> <a href="{{ route('P.index') }}">Mi Veterinario</a> </li>
                                         <li class="p-menu"> <a href="{{ route('P.index') }}">Mi SPA</a> </li>
-                                        <li class="p-menu"> <a href="{{ route('P.index') }}">Vacunas</a> </li>
-                                        <li class="p-menu"> <a href="{{ route('P.index') }}">Cuidados <br/> Especiales</a> </li>
-                                        <li class="p-menu"> <a href="{{ route('P.index') }}">Carácter</a> </li>
+                                        <li class="p-menu"> <a href="{{ route('P.index') }}">Mis Vacunas</a> </li>
+                                        <li class="p-menu"> <a href="{{ route('P.index') }}">Cuidados Especiales</a> </li>
+                                        <li class="p-menu"> <a href="{{ route('P.index') }}">Mi Carácter</a> </li>
                                         <li class="p-menu"> <a href="{{ route('home') }}">Mi Cuenta</a> </li>
                                     </ul>
                                 </div>
@@ -89,7 +88,7 @@
                         <div class="img_left"><img  src="./images/producto-premios.png" alt=""/></div>
                         <div class="content_text">
                             <div>
-                                <h2 class="super-title">PREMIOS NATURALES</h2>
+                                <h2 class="super-title">PREMIOS NATURALES Y SALUDABLES</h2>
                                 <p class="p-principal">Para recompensar sus grandes logros</p>
                             </div>
                             <div class="btnOrange_sm show_lg">
@@ -163,7 +162,7 @@
                 <div class="content_producto">
                     <div class="img_center"><img src="images/medalla-1.png" alt=""/></div>
                     <div class="content_text">
-                        <p class="p-product">Escanea el <span>TAG QR</span> de tu peludo y obten toda su información</p>
+                        <p class="p-product">Escanea el <span>TAG QR</span> de tu peludo y obtén toda su información</p>
                         <div class="btnOrange_sm">
                             <a href="http://www.tuttipelosi.facilqr.com/inf4/" target="_blank">
                                 <p class="text_btnO">conocer más</p>
@@ -176,7 +175,7 @@
                 <div class="content_producto">
                     <div class="img_center"><img src="images/medalla-1.png" alt=""/></div>
                     <div class="content_text">
-                        <p class="p-product">Escanea el <span>TAG QR</span> de tu peludo y obten toda su información</p>
+                        <p class="p-product">Escanea el <span>TAG QR</span> de tu peludo y obtén toda su información</p>
                         <div class="btnOrange_sm ">
                             <a href="http://www.tuttipelosi.facilqr.com/inf4/" target="_blank">
                                 <p class="text_btnO">conocer más</p>
@@ -301,11 +300,12 @@
                 </div>
                 <div class="row p-0">
                     <div class="col" style="z-index: 5" >
-                        <div class="btnGreen_sm">
+                        <br><br><br>
+                        {{-- <div class="btnGreen_sm">
                             <a href="pages/identificacion.html">
                                 <p class="text_btnO">Conectar</p>
                             </a>
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
                 <div class="row">
@@ -468,7 +468,7 @@
                   <div class="row">
                       <div class="col-12 p-0">
                           <div class="content-title">
-                              <p class="title_contact text-yellow2">Contactános <span>resolvemos tus Dudas</span></p>
+                              <p class="title_contact text-yellow2">Contáctanos <span>Resolvemos tus Dudas</span></p>
                           </div>
                       </div>
                   </div>
@@ -479,7 +479,7 @@
                                 <form action="{{ url('send') }}" method="POST" class="content_form">
                                     {{ csrf_field() }}
                                     <div class="mb-3">
-                                      <input type="text" name="name" class="form-control" id="name" placeholder="NAME">
+                                      <input type="text" name="name" class="form-control" id="name" placeholder="NOMBRE">
                                     </div>
                                     <div class="mb-3">
                                       <input type="email" name="email" class="form-control" id="email" placeholder="E-MAIL">
@@ -493,8 +493,8 @@
                               <div class="content_text">
                                   <p class="subtitle_contact">Tutti Pelosi <span>consiéntelo... cuidándolo</span></p>
                                   <div class="content_data">
-                                      <p class="p_contacto">Queretaro, Qro.</p>
-                                      <p class="p_contacto"><a href="mailto:Contacto@tuttipelosi.com">Contacto@tuttipelosi.com</a></p>
+                                      <p class="p_contacto">Querétaro, Qro.</p>
+                                      <p class="p_contacto"><a href="mailto:Contacto@tuttipelosi.com">contacto@tuttipelosi.com</a></p>
                                   </div>
                                   <div class="social_media">
                                       {{-- <div class="icon"><a href="https://www.facebook.com/Tutti-Pelosi-100930825425191"><i class="fab fa-whatsapp-square" ></i></a></div> --}}

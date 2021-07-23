@@ -40,13 +40,12 @@
                             <div class="col-12 p-0">
                                 <div class="content_menu">
                                     <ul class="content_ul">
-                                        <li class="p-menu"> <a href="#contact">Contacta a mi Dueño</a> </li>
-                                        <li class="p-menu"> <a href="#segundo">Segundo Contacto</a> </li>
+                                        <li class="p-menu"> <a href="#contact">Datos Generales</a> </li>
                                         <li class="p-menu"> <a href="#veterianrio">Mi Veterinario</a> </li>
                                         <li class="p-menu"> <a href="#spa">Mi SPA</a> </li>
-                                        <li class="p-menu"> <a href="#vacunas">Vacunas</a> </li>
-                                        <li class="p-menu"> <a href="#cuidados">Cuidados <br/> Especiales</a> </li>
-                                        <li class="p-menu"> <a href="#caracter">Carácter</a> </li>
+                                        <li class="p-menu"> <a href="#vacunas">Mis Vacunas</a> </li>
+                                        <li class="p-menu"> <a href="#cuidados">Cuidados Especiales</a> </li>
+                                        <li class="p-menu"> <a href="#caracter">Mi Carácter</a> </li>
                                         <li class="p-menu"> <a href="{{ route('home') }}">Mi Cuenta</a> </li>
                                     </ul>
                                 </div>
@@ -238,7 +237,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row" id="caracter">
+                    <div class="row" id="veterinario">
                         <div class="col-12 p-0">
                             <div class="content_box">
                                 <div class="header">
