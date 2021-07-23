@@ -69,6 +69,13 @@
                                     @foreach ($vaccines as $vaccine)
                                         <li class="list-group-item d-flex justify-content-between align-items-center">
                                             {{ $vaccine->vaccine }} - {{ $vaccine->date }}
+                                            <form action="{{ route('vaccines.destroy',$vaccine->id) }}" method="POST">
+                                                @csrf
+                                                @method('DELETE')
+                                                <button type="submit"  class="btn btn-sm btn-icon btn-danger btn-round waves-effect waves-light waves-round">
+                                                    X
+                                                </button>
+                                            </form>
                                         </li>
                                     @endforeach
                                 </ul>
@@ -81,17 +88,30 @@
                             </div>
                             <div>
                                 <ul class="list-group">
-                                    @foreach ($pictures as $picture)
-                                        <div class="card" style="width: 100%;">
-                                            <img src="{{ asset('storage') }}/{{ $picture->picture }}" class="card-img-top" alt="...">
-                                            {{-- <div class="card-body">
-                                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                            </div> --}}
-                                        </div>
+                                    @foreach ($pictures as $number => $picture)
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Foto {{ $number+1 }}</h5>
+                                                <p class="card-text">
+                                                    <small class="text-muted">
+                                                        <form action="{{ route('pictures.destroy',$picture->id) }}" method="POST">
+                                                            @csrf
+                                                            @method('DELETE')
+                                                            <button type="submit"  class="btn btn-sm btn-icon btn-danger btn-round waves-effect waves-light waves-round">
+                                                                Borrar foto
+                                                            </button>
+                                                        </form>
+                                                    </small>
+                                                </p>
+                                            </div>
+                                            <img class="card-img-bottom" src="{{ asset('storage') }}/{{ $picture->picture }}" alt="Card image cap">
+                                        </div><br>
                                     @endforeach
                                 </ul>
                             </div>
-                            <a href="{{ route('pictures.create') }}" class="btn">Nueva foto</a>
+                            @if ( $pictures->count() < 3 )
+                                <a href="{{ route('pictures.create') }}" class="btn">Nueva foto</a>
+                            @endif
                         </div>
                     </div>
                 </div>
@@ -104,7 +124,7 @@
                         </div>
                     </div>
                     <div class="card-body">
-                        <form method="post" action="{{ route('pets.update', $pet->tag) }}" autocomplete="off">
+                        <form method="post" action="{{ route('pets.update', $pet->id) }}" autocomplete="off">
                             @csrf
                             @method('put')
 
@@ -193,6 +213,16 @@
                                 <div class="form-group{{ $errors->has('name') ? ' has-danger' : '' }}">
                                     <label class="form-control-label" for="input-personality">Personalidad</label>
                                     <textarea name="personality" class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="">{{ $pet->personality }}</textarea>
+
+                                    {{-- @if ($errors->has('name'))
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $errors->first('name') }}</strong>
+                                        </span>
+                                    @endif --}}
+                                </div>
+                                <div class="form-group{{ $errors->has('name') ? ' has-danger' : '' }}">
+                                    <label class="form-control-label" for="input-veterinary">Veterinario y Estética</label>
+                                    <textarea name="veterinary" class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="">{{ $pet->veterinary }}</textarea>
 
                                     {{-- @if ($errors->has('name'))
                                         <span class="invalid-feedback" role="alert">

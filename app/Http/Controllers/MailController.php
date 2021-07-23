@@ -23,7 +23,7 @@ class MailController extends Controller
                 'message'   =>   $request->message
             );
 
-            $email = 'rmonroy.rodriguez@gmail.com'; // Dirección de correo donde llegarán los correos del formulario de la landingpage
+            $email = 'tuttipelosi@facilqr.com'; // Dirección de correo donde llegarán los correos del formulario de la landingpage
 
             // dd($contact);
 

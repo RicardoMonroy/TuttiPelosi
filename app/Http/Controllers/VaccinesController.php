@@ -99,6 +99,9 @@ class VaccinesController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $vaccine = Vaccine::find($id);
+        $vaccine->delete();
+
+        return redirect()->back();
     }
 }

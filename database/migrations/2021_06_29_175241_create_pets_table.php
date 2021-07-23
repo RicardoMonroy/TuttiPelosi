@@ -26,6 +26,7 @@ class CreatePetsTable extends Migration
             $table->string('color')->nullable();
             $table->text('special_cares')->nullable(); // Cuidados especiales
             $table->text('personality')->nullable(); // Personalidad
+            $table->text('veterinary')->nullable(); // Veterinario
 
             $table->unsignedBigInteger('owner_id');
             $table->foreign('owner_id')->references('id')->on('owners');

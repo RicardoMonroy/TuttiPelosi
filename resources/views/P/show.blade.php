@@ -113,6 +113,7 @@
                         @if ( isset($phone->number) )
                             <div class="fixed_wapp">
                                 <a href="https://wa.me/{{ $phone->number }}" target="_blank"><img src="../images/whatsapp.png" alt="" /></a>
+                                <p style="margin-top: 10px; color: #fff">{{ $phone->number }}</p>
                             </div>
                         @endif
                     </div>
@@ -229,10 +230,23 @@
                             <div class="content_box">
                                 <div class="header">
                                     <span><img src="../images/icon_dog.png" id="dog" alt="perro"/></span>
-                                    <h4 class="title_tabla">Mi Caracter</h4>
+                                    <h4 class="title_tabla">Mi Carácter</h4>
                                 </div>
                                 <p class="p-tableI">
                                     {{ $pet->personality }}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" id="caracter">
+                        <div class="col-12 p-0">
+                            <div class="content_box">
+                                <div class="header">
+                                    <span><img src="../images/icon_casa.png" id="dog" alt="perro"/></span>
+                                    <h4 class="title_tabla">Veterinario y estética</h4>
+                                </div>
+                                <p class="p-tableI">
+                                    {{ $pet->veterinary }}
                                 </p>
                             </div>
                         </div>

@@ -221,7 +221,11 @@ class PetsController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        // dd($request->all());
+        $pet = Pet::find($id);
+        $pet->update($request->all());
+
+        return redirect()->back();
     }
 
     /**
@@ -232,6 +236,6 @@ class PetsController extends Controller
      */
     public function destroy($id)
     {
-        //
+        // No se puede eliminar la mascota
     }
 }

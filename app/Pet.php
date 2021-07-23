@@ -17,6 +17,7 @@ class Pet extends Model
         'color',
         'special_cares',
         'personality',
+        'veterinary',
         'owner_id'
     ];
 

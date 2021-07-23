@@ -184,6 +184,16 @@
                                         </span>
                                     @endif
                                 </div>
+                                <div class="form-group{{ $errors->has('veterinary') ? ' has-danger' : '' }}">
+                                    <label class="form-control-label" for="input-veterinary">Veterinario y Estética</label>
+                                    <textarea name="veterinary" class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Escriba aquí nombre y télefono de mi veterinario y datos de estética..."></textarea>
+
+                                    @if ($errors->has('veterinary'))
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $errors->first('veterinary') }}</strong>
+                                        </span>
+                                    @endif
+                                </div>
                             </div>
                             <h6 class="heading-small text-muted mb-4">Datos del TAG y PIN</h6>
                             <div class="pl-lg-4">

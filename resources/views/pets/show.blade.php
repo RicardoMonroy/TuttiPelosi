@@ -205,6 +205,16 @@
                                         </span>
                                     @endif --}}
                                 </div>
+                                <div class="form-group{{ $errors->has('name') ? ' has-danger' : '' }}">
+                                    <label class="form-control-label" for="input-veterinary">Veterinario y Estética</label>
+                                    <textarea name="veterinary" class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="" disabled>{{ $pet->veterinary }}</textarea>
+
+                                    {{-- @if ($errors->has('name'))
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $errors->first('name') }}</strong>
+                                        </span>
+                                    @endif --}}
+                                </div>
 
                                 <div class="text-center">
                                     <a href="{{ route('pets.edit', $pet->tag) }}" class="btn btn-success mt-4">Editar</a>
