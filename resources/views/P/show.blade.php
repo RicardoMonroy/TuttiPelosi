@@ -105,7 +105,7 @@
                         @if ( isset($cover->picture) )
                             <img src="{{ asset('storage') }}/{{ $cover->picture }}" class="" style="max-width: 100%; max-height: 100%; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); border-radius: 5%;">
                         @else
-                        <p class="placeholder_foto">
+                        <p class="placeholder_foto" style="color: #000000">
                             No hay nunguna foto <br/><br> Esperemos a que el humano <br> suba algunas...
                         </p>
                         @endif
