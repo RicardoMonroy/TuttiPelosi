@@ -24,9 +24,6 @@ class PetController extends Controller
         $pictures = $pet->pictures;
         $phone = $pet->owner->phones->first();
 
-
-
-
         return view('P.show', compact('pet', 'cover', 'pictures', 'phone'));
     }
 
@@ -63,8 +60,12 @@ class PetController extends Controller
             // dd('no encontrada');
             return redirect('pets/create');
         }
+        // dd($pet->pictures);
+        $cover = $pet->pictures->first();
+        $pictures = $pet->pictures;
+        $phone = $pet->owner->phones->first();
 
-        return view('P.show', compact('pet'));
+        return view('P.show', compact('pet', 'cover', 'pictures', 'phone'));
     }
 
 }

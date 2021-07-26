@@ -3633,8 +3633,10 @@ body {
   }
   .content .section #qr .img_right img {
     width: 25rem;
-    left: 0;
+    left: 15%;
     bottom: -10rem;
+    margin-top: 30px;
+    padding-bottom: 50px;;
   }
   .content .section #premios {
     background-image: none;
@@ -3685,7 +3687,7 @@ body {
     width: 55%;
     margin-top: 2rem;
     position: relative;
-    left: calc(50% - 103px);
+    left: calc(40% - 103px);
     bottom: -0.5rem;
   }
   .content .section #mayores {
@@ -3738,7 +3740,7 @@ body {
     width: 65%;
     margin-top: 2rem;
     position: relative;
-    left: calc(50% - 121px);
+    left: calc(40% - 121px);
     bottom: -0.5rem;
   }
   .content .section #socios {
@@ -3788,20 +3790,20 @@ body {
     padding: 0 1.5rem;
   }
   .content .content_producto .img_center img {
-    width: 70%;
+    /* width: 70%; */
   }
   .content .content_producto .img_center img#bones {
-    width: 94%;
+    width: 74%;
     margin-bottom: 1rem;
   }
   .content .content_producto .img_center img#carnaza {
-    width: 46%;
+    width: 30%;
   }
   .content .content_producto .img_center img#pollo {
-    width: 100%;
+    width: 65%;
   }
   .content .content_producto .img_center img#colageno {
-    width: 81%;
+    width: 58%;
   }
   .content .content_producto .btnOrange_sm {
     padding: 0.1rem 1rem 0.3rem;
